@@ -13,7 +13,7 @@ Customer Personality Analysis (Kaggle)
 - Fixed incorrect data types (e.g., age as integer)
 
 ## 📂 Files in this repo:
-- `cleaning_script.py`: Python code used for cleaning
+- `cleaning_script.ipynb`: Python code used for cleaning
 - `cleaned_dataset.csv`: Cleaned data
 - `README.md`: Summary of the work done
 
