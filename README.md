@@ -15,7 +15,7 @@ To clean a raw dataset by:
 ## ⚙️ Tools Used
 - Python
 - Pandas
-- Google Colab
+- Jupyter Notebook
 
 ## 🧹 Steps Performed
 1. Loaded the dataset using `pandas.read_csv()`
