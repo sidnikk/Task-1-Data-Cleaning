@@ -1,19 +1,39 @@
 # Task 1: Data Cleaning and Preprocessing
 
-## ✅ Dataset Used:
-Customer Personality Analysis (Kaggle)  
-🔗 https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis
+## 📄 Dataset
+**Customer Personality Analysis**  
+Source: [Kaggle](https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis)
 
-## 🧹 Cleaning Performed:
-- Handled missing values using fillna and dropna
-- Removed duplicates using `drop_duplicates`
-- Standardized text fields like Gender and Education
-- Converted all dates to format DD-MM-YYYY
-- Renamed all columns to lowercase_with_underscores
-- Fixed incorrect data types (e.g., age as integer)
+## 📌 Objective
+To clean a raw dataset by:
+- Handling missing values
+- Removing duplicates
+- Standardizing inconsistent formatting
+- Renaming columns
+- Fixing data types
 
-## 📂 Files in this repo:
-- `cleaning_script.ipynb`: Python code used for cleaning
-- `cleaned_dataset.csv`: Cleaned data
-- `README.md`: Summary of the work done
+## ⚙️ Tools Used
+- Python
+- Pandas
+- Google Colab
 
+## 🧹 Steps Performed
+1. Loaded the dataset using `pandas.read_csv()`
+2. Checked for missing values using `.isnull().sum()`
+3. Filled missing values in `Income` with the column mean
+4. Removed duplicates using `.drop_duplicates()`
+5. Standardized text fields (e.g., `Education`) to lowercase
+6. Converted `Dt_Customer` to datetime format
+7. Renamed column headers to lowercase with underscores
+8. Exported cleaned dataset to `cleaned_dataset.csv`
+
+## 📂 Files Included
+- `raw_dataset.csv`: Original file
+- `cleaned_dataset.csv`: Cleaned and final version
+- `cleaning_script.py`: Python script used
+- `README.md`: Summary of task and learnings
+
+## 🧠 Learning Outcomes
+- Data cleaning with Pandas
+- Handling real-world data issues
+- Preprocessing pipeline for analysis and modeling
